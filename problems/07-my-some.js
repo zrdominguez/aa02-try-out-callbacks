@@ -24,7 +24,10 @@ console.log(result3);   // true
 *******************************************************************************/
 
 function mySome(array, cb) {
-    // Your code here 
+    let result = array.filter((el, index) => {
+        return cb(el, index);
+    })
+    return result.length > 0;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
