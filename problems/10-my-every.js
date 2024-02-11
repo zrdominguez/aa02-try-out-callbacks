@@ -22,7 +22,11 @@ console.log(myEvery(['book', 'door', 'pen'], hasO));    // false
 *******************************************************************************/
 
 function myEvery(array, cb) {
-    // Your code here 
+    let check = true;
+    array.forEach(el => {
+        if(!cb(el)) check = false;
+    })
+    return check
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
