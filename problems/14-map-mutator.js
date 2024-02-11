@@ -19,7 +19,10 @@ console.log(arr2); // [ 0, 9, 20 ]
 *******************************************************************************/
 
 function mapMutator(array, cb) {
-  // Your code here 
+    for(const [index, val] of array.entries()){
+      array[index] = cb(val, index);
+    }
+    return array;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
