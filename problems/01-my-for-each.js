@@ -22,7 +22,9 @@ console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
 
 function myForEach(array, cb) {
-    // Your code here 
+    for(const el of array){
+        cb(el);
+    };
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
