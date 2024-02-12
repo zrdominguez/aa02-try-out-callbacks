@@ -29,7 +29,8 @@ console.log(result4);   // false
 *******************************************************************************/
 
 function none(array, cb) {
-  // Your code here 
+  let check = array.every(el => !cb(el));
+  return check;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
