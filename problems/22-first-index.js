@@ -23,7 +23,8 @@ console.log(result3); // -1
 *******************************************************************************/
 
 function firstIndex(array, cb) {
-  // Your code here 
+   let check = array.find(el => cb(el))
+   return array.indexOf(check);
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
