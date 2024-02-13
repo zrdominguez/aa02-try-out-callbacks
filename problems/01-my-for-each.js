@@ -20,6 +20,7 @@ myForEach(['laika', 'belka'], function (el) {
 });
 console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
+//changed
 
 function myForEach(array, cb) {
     for(const el of array){
