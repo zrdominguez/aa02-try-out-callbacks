@@ -25,7 +25,7 @@ function atMost(array, max, cb) {
   array.forEach(el => {
     if(cb(el)) count--;
   })
-  return (count > -1 && count < max) || count == max;
+  return count <= max;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
